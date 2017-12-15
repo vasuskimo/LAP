@@ -5,8 +5,8 @@ LAP not only tries to find the localities of higher density, but also attempts t
 
 ## Why LAP? 
 To understand the context, let us review some popular unsupervised algorithms: K-Means, DBSCAN and archetypal analysis. 
-K-Means works by specifying the number of clusters and it then attempts to find centroids that define a cluster. 
-The biggest flaw of this type of clustering, is that you need to specify the number of clusters and based on the starting point, the clusters formed would be different each time. 
+K-Means works by specifying the number of clusters and then attempts to find centroids that define a cluster. 
+The biggest flaw of this type of clustering is that you need to specify the number of clusters and based on the starting point, the clusters formed would be different each time. 
 DBSCAN works by finding dense clusters and separating those that are far away from this dense cluster. 
 DBSCAN also falls short because it tries to create uniformly sized clusters. 
 Archetypal analysis attempts to find archetypal examples that explain the entire data. 
@@ -23,7 +23,7 @@ Loop until there are no more points in your space or until there are no more piv
   * The pivot point could be either in the sample set or in the rest of the global set, which is why it is in convex combination or affine combination w.r.t. the sample set.
 * Find all points from the global set, that are close to the pivot point.
 * Find the target function that explains all these points.
-* Separate the unlabeled class from the rest and give a unique automatic label to this cluster.
+* Separate the unlabeled class from the rest and give a unique automatic label to this class.
 * Finally, perform one of the following:
   * Classify the rest of the points to best fit, into one of the classes using a SoftMax function. (or) 
   * Label the rest of the points manually into one of the classes identified. (or) 
