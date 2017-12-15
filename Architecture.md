@@ -1,7 +1,7 @@
 # Unsupervised Classification using Localized Archetypal Pivots (LAP)
 ## What is LAP? 
 LAP is a density-based unsupervised classification algorithm which is very different from clustering or archetypal analysis.
-LAP not only tries to find the localities of higher density, but also attempts to find a localized prototypal pivot,that is representative of the locality.
+LAP not only tries to find the localities of higher density, but also attempts to find a localized prototypal pivot, that is representative of the locality.
 
 ## Why LAP? 
 To understand the context, let us review some popular unsupervised algorithms: K-Means, DBSCAN and archetypal analysis. 
@@ -17,7 +17,7 @@ Unsupervised Classification using Localized Archetypal Pivots (LAP) overcomes th
 The archetypal pivot differs from the archetype of the Archetypal analysis, in that the archetype in the latter case form a convex combination of the members, but the archetypal pivot could be either an affine or convex combination of the members of the class.
 
 ## How does LAP Work? 
-* Loop until there are no more points in your space or until there are no more pivots:
+Loop until there are no more points in your space or until there are no more pivots:
 * Select a random set of k points from your space of m data points.
 * Find the pivot point p, that is close (i.e., distance less than a threshold t), to most points in the set. 
   * The pivot point could be either in the sample set or in the rest of the global set, which is why it is in convex combination or affine combination w.r.t. the sample set.
